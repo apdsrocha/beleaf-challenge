@@ -27,6 +27,9 @@ p {
 .bold {
   font-weight: bold;
 }
+.disabled {
+  color: #9d9d9d;
+}
 
 /* Header */
 
