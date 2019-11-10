@@ -12,9 +12,6 @@ External CSS - Erase default CSS
 */
 
 /* 1. General Settings */
-p {
-  font-size: 14px;
-}
 
 h1, 
 h2, 
@@ -27,10 +24,13 @@ p {
   width: 100%;
   height: auto;
 }
+.bold {
+  font-weight: bold;
+}
 
 /* Header */
 
-.header {
+.header-mobile {
   background-color: #ffef60;
   display: flex;
   flex-direction: row;
@@ -38,16 +38,49 @@ p {
   align-content: center;
   padding: 10px;
 }
-.header__navigation {
+@media only screen and (min-width: 700px) {
+  .header-mobile {
+    display: none;
+  }
+}
+
+.header-mobile__navigation {
   width: 75px;
   filter: brightness(0);
   padding-top: 8px;
 }
-.header__title {
+.header-mobile__title {
   font-size: 21px;
   font-weight: 900;
   line-height: 30px;
   text-transform: uppercase;
+}
+.header-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 3%;
+}
+@media only screen and (max-width: 700px) {
+  .header-desktop {
+    display: none;
+  }
+}
+.header-desktop__logo {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.header-desktop__breadcrumbs {
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
 .cart {
@@ -74,31 +107,59 @@ p {
   text-align: center;
   padding: 2px
 }
+.cart__counter-desktop {
+  animation: neon 2s infinite linear;
+  max-height: 30px;
+}
+@keyframes neon {
+  0%,100% {
+      -webkit-box-shadow: 0px 0px 0px 0px #f00;
+      box-shadow: 0px 0px 0px 0px #f00;
+  }
+
+  50% {
+      -webkit-box-shadow: 0px 0px 20px 0px #f00;
+      box-shadow: 0px 0px 20px 0px #f00;
+  }
+}
+
 
 /* Main */
 
 .main {
-  padding: 8% 4%;
+  padding: 8% 3%;
 }
 .main__title {
   font-size: 22px;
   font-weight: 900;
   line-height: 24px;
   text-transform: uppercase;
-  padding-bottom: 10%;
+  padding-bottom: 50px;
+  max-width: 400px;
 }
 
 .dish-menu {
   display: flex;
   flex-wrap: wrap;
 }
+@media only screen and (min-width: 700px) {
+  .dish-menu {
+    padding: 30px 65px;
+    border-top: 4px solid #000000;
+  }
+}
 .dish-menu__item {
   cursor: pointer;
   font-size: 17px;
   font-weight: bold;
   max-width: 230px;
-  margin: auto;
+  margin: 0px auto;
   overflow: hidden;
+}
+@media only screen and (min-width: 700px) { 
+  .dish-menu__item {
+    max-width: 210px;
+  }
 }
 .dish-menu__item img {
   transition: transform .4s ease-in-out;
@@ -138,6 +199,7 @@ p {
 }
 .dish-menu__item-info-body {
   font-family: 'Azo Sans';
+  font-size: 16px;
   font-weight: 500;
   margin: 20px 0 10px 0;
 }
