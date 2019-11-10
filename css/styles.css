@@ -1,0 +1,146 @@
+/* Index 
+
+1. General Settings
+2. Header
+3. Menu
+4. Menu Desktop
+5. Body
+6. Footer
+
+External CSS - Webfonts
+External CSS - Erase default CSS
+*/
+
+/* 1. General Settings */
+p {
+  font-size: 14px;
+}
+
+h1, 
+h2, 
+h3,
+p {
+  font-family: 'Brandon Grotesque';
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* Header */
+
+.header {
+  background-color: #ffef60;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px;
+}
+.header__navigation {
+  width: 75px;
+  filter: brightness(0);
+  padding-top: 8px;
+}
+.header__title {
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.cart {
+  background-color: #ffffff;
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  min-width: 75px;
+}
+.cart__chevron {
+  background-color: #000000;
+  width: 10px;
+  padding: 5px 10px;
+  display: flex;
+}
+.cart__counter {
+  display: flex;
+  padding: 4px 6px 0 0;
+}
+.cart__counter-text {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 13px;
+  text-align: center;
+  padding: 2px
+}
+
+/* Main */
+
+.main {
+  padding: 8% 4%;
+}
+.main__title {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding-bottom: 10%;
+}
+
+.dish-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dish-menu__item {
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  max-width: 230px;
+  margin: auto;
+  overflow: hidden;
+}
+.dish-menu__item img {
+  transition: transform .4s ease-in-out;
+}
+.dish-menu__item:hover img {
+  transform: scale(1.05) rotate(3deg);
+  overflow: hidden;
+}
+.dish-menu__item-counter {
+  background-color: #f5f5f5;
+  display: flex;
+  height: 34px;
+  justify-content: space-between;
+  line-height: 30px;
+  position: relative;
+  top: -4px;
+}
+.dish-menu__item-counter-btn {
+  background: #feed6a;
+  border: none;
+  font-weight: bold;
+  font-size: 24px;
+  width: 20%;
+}
+.dish-menu__item-counter-txt {
+  font-size: 18px;
+  font-weight: bold;
+}
+.dish-menu__item-info {
+  font-weight: bold;
+  text-align: center;
+}
+.dish-menu__item-info-title {  
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 10px;
+}
+.dish-menu__item-info-body {
+  font-family: 'Azo Sans';
+  font-weight: 500;
+  margin: 20px 0 10px 0;
+}
+.dish-menu__item-specs {
+  margin-bottom: 30px;
+}

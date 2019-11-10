@@ -1,0 +1,57 @@
+/* Font - Azo Sans - usada no corpo */
+@font-face {font-family: 'Azo Sans';
+  src: url('../assets/fonts/AzoSans-Regular.eot'); 
+  src: local('../assets/fonts/AzoSans-Regular'), local('../assets/fonts/AzoSans-Regular'),
+      url('../assets/fonts/AzoSans-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/AzoSans-Regular.woff') format('woff'),
+      url('../assets/fonts/AzoSans-Regular.ttf') format('truetype');
+}
+
+/* Fonts - Brandon Grotesque - usada nos títulos*/
+
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('../assets/fonts/BrandonGrotesque-Bold.eot');
+  src: local('../assets/fonts/Brandon Grotesque Bold'), local('../assets/fonts/BrandonGrotesque-Bold'),
+      url('../assets/fonts/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/BrandonGrotesque-Bold.woff') format('woff'),
+      url('../assets/fonts/BrandonGrotesque-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('../assets/fonts/BrandonGrotesque-Black.eot');
+  src: local('../assets/fonts/Brandon Grotesque Black'), local('../assets/fonts/BrandonGrotesque-Black'),
+      url('../assets/fonts/BrandonGrotesque-Black.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/BrandonGrotesque-Black.woff') format('woff'),
+      url('../assets/fonts/BrandonGrotesque-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('../assets/fonts/BrandonGrotesque-Medium.eot');
+  src: local('../assets/fonts/Brandon Grotesque Medium'), local('../assets/fonts/BrandonGrotesque-Medium'),
+      url('../assets/fonts/BrandonGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/BrandonGrotesque-Medium.woff') format('woff'),
+      url('../assets/fonts/BrandonGrotesque-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('../assets/fonts/BrandonGrotesque-Regular.eot');
+  src: local('../assets/fonts/Brandon Grotesque Regular'), local('../assets/fonts/BrandonGrotesque-Regular'),
+      url('../assets/fonts/BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/BrandonGrotesque-Regular.woff') format('woff'),
+      url('../assets/fonts/BrandonGrotesque-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
