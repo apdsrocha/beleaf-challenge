@@ -20,6 +20,11 @@ p {
   font-family: 'Brandon Grotesque';
 }
 
+body {
+  max-width: 1160px;
+  margin: auto;
+}
+
 .responsive {
   width: 100%;
   height: auto;
@@ -262,6 +267,11 @@ p {
   overflow: hidden;
 }
 @media only screen and (min-width: 700px) { 
+  .dish-menu__item {
+    max-width: 270px;
+  }
+}
+@media only screen and (max-width: 700px) { 
   .dish-menu__item {
     max-width: 210px;
   }
