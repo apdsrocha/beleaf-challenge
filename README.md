@@ -1,4 +1,4 @@
-![Logo of Beleaf company](./src/assets/img/logo.png)
+![Logo of Beleaf company](./assets/img/logo.png)
 
 # beleaf-challenge
 > Challenge part of a selection process for a junior frontend position.
