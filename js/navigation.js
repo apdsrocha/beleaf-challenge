@@ -10,24 +10,27 @@
   let navDesktop = doc.querySelector('.navigation-desktop');
   let navMobile = doc.querySelector('.navigation-mobile');
 
+  let chevronDesktop = doc.querySelector('.cart__chevron-img-desktop');
+
   let open = function( main, navigation ) {
-    if(navigation.classList.contains("active")) {
-      navigation.classList.remove("active");
-      main.style.opacity = "1";
+    if(navigation.classList.contains('active')) {
+      navigation.classList.remove('active');
+      main.style.opacity = '1';
     }
     else {
-      navigation.classList.add("active");
-      main.style.opacity = "0.5";
+      navigation.classList.add('active');
+      main.style.opacity = '0.5';
     }
   }
 
-  let close = function( main, navigation) {
-    navigation.classList.remove("active");
-    main.style.opacity = "1";
+  let close = function( main, navigation, icon) {
+    icon.classList.remove('arrow-down');
+    navigation.classList.remove('active');
+    main.style.opacity = '1';
 }
 
   btnNavDesktop.addEventListener('click', function() { open( mainDishes, navDesktop) });
-  btnNavClose.addEventListener('click', function() {close( mainDishes, navDesktop)})
+  btnNavClose.addEventListener('click', function() {close( mainDishes, navDesktop, chevronDesktop)})
   btnNavMobile.addEventListener('click', function() { open( mainDishes, navMobile) });
 
 })(document);

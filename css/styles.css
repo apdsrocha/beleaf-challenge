@@ -100,7 +100,8 @@ p {
   justify-content: space-between;
   min-width: 75px;
 }
-.cart__chevron {
+.cart__chevron,
+.cart__chevron-desktop {
   background-color: #000000;
   width: 10px;
   padding: 5px 10px;
@@ -113,7 +114,7 @@ p {
 }
 
 .arrow-down.open{
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
   transition: transform 1s linear;
 }
 
@@ -197,6 +198,11 @@ p {
   top: 50px;
   z-index: 999;
 }
+@media only screen and (min-width: 700px) {
+  .navigation-mobile  {
+    display: none;
+  }
+}
 
 .navigation-mobile__frame {
   border-bottom: 2px solid #FEEF51;
@@ -221,6 +227,7 @@ p {
   overflow: hidden;
   padding: 3%;
 }
+
 .main__title {
   font-size: 22px;
   font-weight: 900;
