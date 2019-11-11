@@ -2,10 +2,8 @@
 
 1. General Settings
 2. Header
-3. Menu
-4. Menu Desktop
-5. Body
-6. Footer
+3. Navigation
+4. Main
 
 External CSS - Webfonts
 External CSS - Erase default CSS
@@ -39,7 +37,7 @@ body {
   right: 0px !important;
 }
 
-/* Header */
+/* 2. Header */
 
 .header-mobile {
   background-color: #ffef60;
@@ -150,6 +148,8 @@ body {
   }
 }
 
+/* 3. Navigation */ 
+
 .navigation-desktop {
   background-color:#c9e8fa;
   transition: all 0.9s ease-in-out;
@@ -226,7 +226,7 @@ body {
   padding-bottom: 10%;
 }
 
-/* Main */
+/* 4. Main */
 
 .main {
   overflow: hidden;
@@ -272,7 +272,7 @@ body {
   }
 }
 @media only screen and (max-width: 700px) { 
-  .dish-menu__item {
+  .dish-menu__item { 
     max-width: 210px;
   }
 }
