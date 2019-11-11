@@ -1,9 +1,9 @@
-![Logo of Beleaf company](./src/assets/img/logo.png)
+![Logo of Beleaf company](./assets/img/logo.png)
 
 # beleaf-challenge
 > Challenge part of a selection process for a junior frontend position.
 
-My assignment was to recreate the page located [ here ] (https://www.beleaf.com.br/pedido/pratos) to the best of my ability.
+My assignment was to recreate the page located [here](https://www.beleaf.com.br/pedido/pratos) to the best of my ability.
 
 It was done over the course of one Sunday late-afternoon.
 
