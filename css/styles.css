@@ -30,6 +30,9 @@ p {
 .disabled {
   color: #9d9d9d;
 }
+.active {
+  right: 0px !important;
+}
 
 /* Header */
 
@@ -40,6 +43,10 @@ p {
   justify-content: space-between;
   align-content: center;
   padding: 10px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 999;
 }
 @media only screen and (min-width: 700px) {
   .header-mobile {
@@ -99,6 +106,17 @@ p {
   padding: 5px 10px;
   display: flex;
 }
+
+.arrow-down{
+  transform: rotate(0deg);
+  transition: transform 1s linear;
+}
+
+.arrow-down.open{
+  transform: rotate(180deg);
+  transition: transform 1s linear;
+}
+
 .cart__counter {
   display: flex;
   padding: 4px 6px 0 0;
@@ -126,11 +144,97 @@ p {
   }
 }
 
+.navigation-desktop {
+  background-color:#c9e8fa;
+  transition: all 0.9s ease-in-out;
+  width: 370px;
+  height: 100vh;
+  position: fixed;
+  right: -370px;
+  top: 0;
+  z-index: 999;
+  
+}
+.navigation-desktop__close-btn {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  float: right;
+  font-family: 'Azo Sans';
+  font-weight: normal;
+  margin-right: 30px;
+  margin-top: 16px;
+  padding: 4px 2px;
+  text-align: center;
+  width: 20px;
+}
+.navigation-desktop__title {
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 20% 8% 10% 8%;
+}
+.navigation-desktop__txt{
+  border-bottom: 3px solid;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 8%;
+  padding-bottom: 4%;
+}
+.navigation-desktop__sub-txt {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.navigation-mobile {
+  background-color:#ffffff;
+  transition: all 0.9s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  /*right: -370px; */
+  top: 50px;
+  z-index: 999;
+  
+}
+.navigation-mobile__close-btn {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  float: right;
+  font-family: 'Azo Sans';
+  font-weight: normal;
+  margin-right: 30px;
+  margin-top: 16px;
+  padding: 4px 2px;
+  text-align: center;
+  width: 20px;
+}
+.navigation-mobile__title {
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 20% 8% 10% 8%;
+}
+.navigation-mobile__txt{
+  border-bottom: 3px solid;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 8%;
+  padding-bottom: 4%;
+}
+.navigation-mobile__sub-txt {
+  padding-top: 20px;
+  text-align: center;
+}
 
 /* Main */
 
 .main {
-  padding: 8% 3%;
+  overflow: hidden;
+  padding: 3%;
 }
 .main__title {
   font-size: 22px;
@@ -186,6 +290,7 @@ p {
   font-weight: bold;
   font-size: 24px;
   width: 20%;
+  cursor: pointer;
 }
 .dish-menu__item-counter-txt {
   font-size: 18px;
